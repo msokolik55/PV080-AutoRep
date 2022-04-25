@@ -32,8 +32,9 @@ class RunBinSh(object):
 
 
 def import_urlib_version(version):
-    """Import urlib"""
-    exec("import urllib%s as urllib" % version)
+    """Import urllib"""
+    # exec("import urllib%s as urllib" % version)
+    import urllib
 
 
 @app.route('/')
